@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.minh98.licham.MainActivity">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/background">
+    <TextView
+        android:id="@+id/lichAm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#286caf"
+        android:text="TextView"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/canChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBottom="@+id/lichAm"
+        android:layout_toRightOf="@+id/lichAm"
+        android:layout_toEndOf="@+id/lichAm"
+
+        android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:calendarViewShown="true"
+        android:datePickerMode="calendar"
+        android:spinnersShown="false"
+        android:layout_below="@+id/linearLayout" />
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datePicker"
+        android:layout_centerHorizontal="true"
+        android:text="Check" />
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCheck"
+        android:text="show"/>
+
+
+
+
+
+</RelativeLayout>
